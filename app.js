@@ -55,6 +55,8 @@ app.get("/posts/like/:id", async (req, res) => {
   }
 });
 
+// will not work as we want, references https://www.mongodb.com/docs/manual/core/write-operations-atomicity/#concurrency-control
+// have to use find and modify
 app.get("/posts/like/transaction/:id", async (req, res) => {
   const session = await mongoose.startSession();
   session.startTransaction();
