@@ -1,3 +1,6 @@
+// NOTE : for typeorm go here https://gist.github.com/tomfun/26f909789d168d44acbeed08f502cd91
+
+
 const express = require("express");
 const mongoose = require("mongoose");
 const { Sequelize, DataTypes } = require("sequelize");
